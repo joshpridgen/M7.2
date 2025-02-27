@@ -1,51 +1,90 @@
 body {
-    background-color: #fff;
-    color: #333;
-    margin: 0;
-    font: 1.2em / 1.2 Arial, Helvetica, sans-serif;
-  }
+  background-color: #fff;
+  color: #333;
+  margin: 0;
+  font: 1.2em / 1.2 Arial, Helvetica, sans-serif;
+}
 
-  img {
-      max-width: 100%;
-      display: block;
-  }
-  
-  .logo {
-    font-size: 200%;
-    padding: 50px 20px;
-    margin: 0 auto;
-    max-width: 980px;
-  }
-  
-  .grid {
-    margin: 0 auto;
-    padding: 0 20px;
-    max-width: 980px;
-  }
-  
-  nav {
-    background-color: #000;
-    padding: .5em;
-  }
-  
-  nav ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-  }
-  
-  nav a {
-    color: #fff;
-    text-decoration: none;
-    padding: .5em 1em;
-  }
-  
-  .photos {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
+img {
+    max-width: 100%;
+    display: block;
+}
 
-  .feature {
-      width: 200px;
-  }
+.logo {
+  font-size: 200%;
+  padding: 50px 20px;
+  margin: 0 auto;
+  max-width: 980px;
+}
+
+.grid {
+  margin: 0 auto;
+  padding: 0 20px;
+  max-width: 980px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Adds space between columns */
+}
+
+article {
+  flex: 1 1 60%; /* Allows flexibility, takes up about 60% of space */
+  min-width: 300px; 
+  padding-top: 20px;
+}
+
+aside {
+  padding-top: 20px;
+  flex: 1 1 35%; /* Takes up about 35% of space */
+  min-width: 250px;
+}
+
+nav {
+  background-color: #000;
+  padding: 0.5em;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 1000; /* Ensures it stays above other content */
+}
+
+
+nav ul {
+  margin: 10px;
+  padding-right: 75px;
+  padding-left: 50px;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around; /* Evenly distributes items */
+  align-items: center;
+}
+
+nav li {
+  flex-grow: 1; /* Ensures even spacing */
+  text-align: center;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  padding: 0.5em;
+}
+
+.photos {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1px; /* Creates a 1-pixel gap between images */
+  width: 100%;
+
+}
+
+.feature {
+    width: 250px;
+    float: left;
+    padding-right: 10px;
+    padding-top: 5px;
+}

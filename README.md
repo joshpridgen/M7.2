@@ -1,8 +1,6 @@
-# web-dev-starter
+# Overview 
 
-This is a starter project for web development with no frameworks and minimal
-dependencies. It is intended to be a starting point for web development projects
-that are written in plain HTML, CSS, and JavaScript.
+This is a project for CS 408 that is intended to improve upon my skills in layouts!
 
 ## Getting Started
 
